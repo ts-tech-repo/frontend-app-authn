@@ -32,7 +32,8 @@ const BaseContainer = ({ children, showWelcomeBanner, username }) => {
 
   if (baseContainerVersion === IMAGE_LAYOUT) {
     return (
-      <div className="layout">
+          <div className="layout">
+            <marquee style={{display: 'flex',position: 'absolute',color: 'red',top: '5px',left: '0',background: '#fff',padding: '4px',margin: '0%',fontSize: '20px'}}>Site under maintenance, we'll be back soon.</marquee>
         <MediaQuery maxWidth={breakpoints.extraSmall.maxWidth - 1}>
           {showWelcomeBanner ? <AuthSmallLayout username={username} /> : <ImageExtraSmallLayout />}
         </MediaQuery>
@@ -56,6 +57,7 @@ const BaseContainer = ({ children, showWelcomeBanner, username }) => {
     <>
       <div className="col-md-12 extra-large-screen-top-stripe" />
       <div className="layout">
+      <marquee style={{display: 'flex',position: 'absolute',color: 'red',top: '5px',left: '0',background: '#fff',padding: '4px',margin: '0%',fontSize: '20px'}}>Site under maintenance, we'll be back soon.</marquee>
         <MediaQuery maxWidth={breakpoints.small.maxWidth - 1}>
           {showWelcomeBanner ? <AuthSmallLayout username={username} /> : <DefaultSmallLayout />}
         </MediaQuery>
