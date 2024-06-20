@@ -157,6 +157,7 @@ const ForgotPasswordPage = (props) => {
                 <Hyperlink isInline destination={`mailto:${getConfig().INFO_EMAIL}`}>{getConfig().INFO_EMAIL}</Hyperlink>
               </span>
             </p>
+            <div style={{marginTop: '50px',background: '#eee',color: 'red',textAlign: 'center'}}>Site under maintenance, we'll be back soon.</div>
           </Form>
         </div>
       </div>

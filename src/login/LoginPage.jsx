@@ -299,6 +299,7 @@ class LoginPage extends React.Component {
               {intl.formatMessage(messages['forgot.password'])}
             </Link>
             {this.renderThirdPartyAuth(providers, secondaryProviders, currentProvider, thirdPartyAuthApiStatus, intl)}
+            <div style={{marginTop: '50px',background: '#eee',color: 'red',textAlign: 'center'}}>Site under maintenance, we'll be back soon.</div>
           </Form>
         </div>
       </>
