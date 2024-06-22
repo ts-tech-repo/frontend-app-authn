@@ -9,3 +9,11 @@ export default function setCookie(cookieName, cookieValue, cookieExpiry) {
   }
   cookies.set(cookieName, cookieValue, options);
 }
+
+
+export default function getCookie(name) {
+  if (cookieName) { // To avoid setting getting exception when setting cookie with undefined names.
+    const cookies = new Cookies();
+    return cookies.get(name);
+  }
+}
