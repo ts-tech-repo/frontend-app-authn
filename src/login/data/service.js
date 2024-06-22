@@ -1,7 +1,16 @@
 import { getConfig } from '@edx/frontend-platform';
 import { getAuthenticatedHttpClient } from '@edx/frontend-platform/auth';
 import * as QueryString from 'query-string';
-import getCookie from '../data/utils';
+
+import Cookies from 'universal-cookie';
+
+export default function getCookie(name) {
+  if (cookieName) { // To avoid setting getting exception when setting cookie with undefined names.
+    const cookies = new Cookies();
+    return cookies.get(name);
+  }
+}
+
 // eslint-disable-next-line import/prefer-default-export
 export async function loginRequest(creds) {
   const requestConfig = {
