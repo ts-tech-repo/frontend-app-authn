@@ -4,17 +4,10 @@ import * as QueryString from 'query-string';
 
 import Cookies from 'universal-cookie';
 
-export default function getCookie(name) {
-  if (cookieName) { // To avoid setting getting exception when setting cookie with undefined names.
-    const cookies = new Cookies();
-    return cookies.get(name);
-  }
-}
-
 // eslint-disable-next-line import/prefer-default-export
 export async function loginRequest(creds) {
   const requestConfig = {
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded',  'X-CSRFToken' : getCookie('csrftoken') },
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded'},
     isPublic: true,
   };
 
