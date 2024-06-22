@@ -1,8 +1,7 @@
 import { getConfig } from '@edx/frontend-platform';
 import { getAuthenticatedHttpClient } from '@edx/frontend-platform/auth';
 import * as QueryString from 'query-string';
-import { getCookie } from '../utils';
-
+import getCookie from '../data/utils';
 // eslint-disable-next-line import/prefer-default-export
 export async function loginRequest(creds) {
   const requestConfig = {
