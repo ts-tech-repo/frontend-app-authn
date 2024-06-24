@@ -8,7 +8,7 @@ const messages = defineMessages({
   },
   'with.site.name': {
     id: 'with.site.name',
-    defaultMessage: 'IIT Kanpur',
+    defaultMessage: '{siteName}',
     description: 'Header text with site name for logistration MFE pages',
   },
 });
