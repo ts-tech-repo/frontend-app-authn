@@ -32,6 +32,8 @@ import './index.scss';
 registerIcons();
 
 const MainApp = () => (
+  <>
+  <img src="https://emasters.iitk.ac.in/images/index_page/iitk-logo.png" alt="TS Logo" className="logo" />
   <AppProvider store={configureStore()}>
     <Helmet>
       <link rel="shortcut icon" href={getConfig().FAVICON_URL} type="image/x-icon" />
@@ -58,6 +60,7 @@ const MainApp = () => (
       <Route path="*" element={<Navigate replace to={PAGE_NOT_FOUND} />} />
     </Routes>
   </AppProvider>
+  </>
 );
 
 export default MainApp;
