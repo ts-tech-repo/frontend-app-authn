@@ -158,7 +158,7 @@ const messages = defineMessages({
   },
   'login.incorrect.credentials.error': {
     id: 'login.incorrect.credentials.error',
-    defaultMessage: 'The username, email, or password you entered is incorrect. Please try again.',
+    defaultMessage: 'The email or password you entered is incorrect. Please try again.',
     description: 'Error message for incorrect email or password',
   },
   'login.form.invalid.error.message': {

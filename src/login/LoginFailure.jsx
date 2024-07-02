@@ -106,7 +106,7 @@ const LoginFailureMessage = (props) => {
             <FormattedMessage
               id="login.incorrect.credentials.error.attempts.text.1"
               description="Error message for incorrect email or password"
-              defaultMessage="The username, email or password you entered is incorrect. You have {remainingAttempts} more sign in
+              defaultMessage="The email or password you entered is incorrect. You have {remainingAttempts} more sign in
                 attempts before your account is temporarily locked."
               values={{ remainingAttempts: context.remainingAttempts }}
             />
@@ -147,7 +147,7 @@ const LoginFailureMessage = (props) => {
           <p>
             <FormattedMessage
               id="login.incorrect.credentials.error.with.reset.link"
-              defaultMessage="The username, email, or password you entered is incorrect. Please try again or {resetLink}."
+              defaultMessage="The email or password you entered is incorrect. Please try again or {resetLink}."
               values={{ resetLink }}
             />
           </p>
