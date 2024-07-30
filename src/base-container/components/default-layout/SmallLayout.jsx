@@ -25,7 +25,7 @@ const SmallLayout = () => {
             )}
           >
             <span>
-              {formatMessage(messages['start.learning'])}{' '}
+              {/* {formatMessage(messages['start.learning'])}{' '} */}
               <span className="text-accent-a d-inline-block">
                 {/* {formatMessage(messages['with.site.name'], { siteName: getConfig().SITE_NAME })} */}
                 CMU
