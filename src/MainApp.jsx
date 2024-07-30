@@ -34,7 +34,7 @@ registerIcons();
 const MainApp = () => (
   <>
   <a href="/">
-    <img src="https://emasters.iitk.ac.in/images/index_page/iitk-logo.png" alt="IITK Logo" className="logo" />
+    <img src="https://static.talentsprint.com/ptc/devops-new.png" alt="CMU Logo" className="logo" />
   </a>
   <AppProvider store={configureStore()}>
     <Helmet>

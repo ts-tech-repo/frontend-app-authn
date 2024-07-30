@@ -301,20 +301,7 @@ class LoginPage extends React.Component {
             {this.renderThirdPartyAuth(providers, secondaryProviders, currentProvider, thirdPartyAuthApiStatus, intl)}
             <div className='maintenance_msg' style={{marginTop: '50px',color: 'red'}}>
               <div>
-                <strong className="heading_msg">Important Update</strong>
-                <span>
-                  <br /><br />
-                  Dear Learner,
-                </span>
-              </div>
-              <p>
-                We are in the process of upgrading your learning experience on the IIT Kanpur eMasters learning portal, and hence you will be unable to access your account here until June 27, 2024. Please <a target="_blank" rel="noopener noreferrer" href="https://archive.ipearl.emasters.iitk.ac.in">click here</a> to access your account in the meantime.
-              </p>
-              <p>We appreciate your understanding and cooperation in this matter.</p>
-              <div>
-                <h6>Regards,</h6>
-                <h6>iPearl.ai Team,</h6>
-                <h6>IIT Kanpur eMasters Degree</h6>
+                <strong className="heading_msg">Under Maintenance</strong>
               </div>
             </div>
           </Form>

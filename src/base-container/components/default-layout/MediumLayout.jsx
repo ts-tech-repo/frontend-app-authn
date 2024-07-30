@@ -31,7 +31,7 @@ const MediumLayout = () => {
                   {formatMessage(messages['start.learning'])}{' '}
                   <span className="text-accent-a d-inline-block">
                     {/* {formatMessage(messages['with.site.name'], { siteName: getConfig().SITE_NAME })} */}
-                    IIT Kanpur
+                    CMU
                   </span>
                 </span>
               </h1>
