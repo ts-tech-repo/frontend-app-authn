@@ -24,10 +24,10 @@ const LargeLayout = () => {
               { 'ml-6': getConfig().SITE_NAME !== 'edX' },
             )}
           >
-            {/* {formatMessage(messages['start.learning'])} */}
+            {formatMessage(messages['start.learning'])}
             <div className="text-accent-a">
               {/* {formatMessage(messages['with.site.name'], { siteName: getConfig().SITE_NAME })} */}
-              CMU
+              CMU and TalentSprint
             </div>
           </h1>
         </div>
