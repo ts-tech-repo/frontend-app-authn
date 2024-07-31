@@ -26,8 +26,7 @@ const LargeLayout = () => {
           >
             {formatMessage(messages['start.learning'])}
             <div className="text-accent-a">
-              {/* {formatMessage(messages['with.site.name'], { siteName: getConfig().SITE_NAME })} */}
-              CMU and TalentSprint
+              {formatMessage(messages['with.site.name'], { siteName: getConfig().SITE_NAME })}
             </div>
           </h1>
         </div>

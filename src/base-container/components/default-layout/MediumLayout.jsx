@@ -30,8 +30,7 @@ const MediumLayout = () => {
                 <span>
                   {formatMessage(messages['start.learning'])}{' '}
                   <span className="text-accent-a d-inline-block">
-                    {/* {formatMessage(messages['with.site.name'], { siteName: getConfig().SITE_NAME })} */}
-                    CMU and TalentSprint
+                    {formatMessage(messages['with.site.name'], { siteName: getConfig().SITE_NAME })}
                   </span>
                 </span>
               </h1>
