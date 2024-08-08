@@ -34,7 +34,7 @@ registerIcons();
 const MainApp = () => (
   <>
   <a href="/">
-    <img src="https://static.talentsprint.com/extras/cmu-ts-logo.png" alt="CMU Logo" className="logo" />
+    <img src="https://static.talentsprint.com/extras/cmu-nse-ts-logo.png" alt="CMU Logo" className="logo" />
   </a>
   <AppProvider store={configureStore()}>
     <Helmet>
