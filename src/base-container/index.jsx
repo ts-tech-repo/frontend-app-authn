@@ -56,7 +56,7 @@ const BaseContainer = ({ children, showWelcomeBanner, username }) => {
   return (
     <>
       <div className="col-md-12 extra-large-screen-top-stripe" />
-      <div className="layout">
+      <div className="layout" style={{ backgroundImage: `url(${getConfig().LOGIN_PAGE_BANNER})` }}>
         <MediaQuery maxWidth={breakpoints.small.maxWidth - 1}>
           {showWelcomeBanner ? <AuthSmallLayout username={username} /> : <DefaultSmallLayout />}
         </MediaQuery>
