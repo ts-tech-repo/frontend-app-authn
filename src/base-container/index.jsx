@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { getConfig } from '@edx/frontend-platform';
 
 import { breakpoints } from '@edx/paragon';
 import classNames from 'classnames';
@@ -32,7 +33,7 @@ const BaseContainer = ({ children, showWelcomeBanner, username }) => {
 
   if (baseContainerVersion === IMAGE_LAYOUT) {
     return (
-          <div className="layout">
+          <div className="layout" style={{ backgroundImage: `url(${getConfig().LOGIN_PAGE_BANNER})` }}>
         <MediaQuery maxWidth={breakpoints.extraSmall.maxWidth - 1}>
           {showWelcomeBanner ? <AuthSmallLayout username={username} /> : <ImageExtraSmallLayout />}
         </MediaQuery>
