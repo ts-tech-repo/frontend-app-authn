@@ -1,5 +1,5 @@
 // URL Paths
-export const LOGIN_PAGE = '/authn/login';
+export const LOGIN_PAGE = '/login';
 export const REGISTER_PAGE = '/register';
 export const REGISTER_EMBEDDED_PAGE = '/register-embedded';
 export const RESET_PAGE = '/reset';
