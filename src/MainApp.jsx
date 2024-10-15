@@ -34,7 +34,7 @@ registerIcons();
 const MainApp = () => (
   <>
   <a href="/">
-    <img src={getConfig().LOGO_URL} alt="IITK Logo" className="logo" />
+    <img src={getConfig().LOGO_URL} alt="Logo" className="logo" />
   </a>
   <AppProvider store={configureStore()}>
     <Helmet>
