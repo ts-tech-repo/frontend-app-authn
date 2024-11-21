@@ -30,6 +30,7 @@ const SmallLayout = () => {
               {getConfig().SITE_SUB_TITLE}
               </span>
             </span>
+            {getConfig().SITE_NAME == "CMU" && <p className='poweredby'>Powered by TalentSprint</p>}
           </h1>
         </div>
       </div>
