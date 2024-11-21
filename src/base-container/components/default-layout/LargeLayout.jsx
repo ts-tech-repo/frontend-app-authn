@@ -28,6 +28,7 @@ const LargeLayout = () => {
             <div className="text-accent-a">
               {getConfig().SITE_SUB_TITLE}
             </div>
+            {getConfig().SITE_NAME == "CMU" && <p className='poweredby'>Powered by TalentSprint</p>}
           </h1>
         </div>
       </div>
