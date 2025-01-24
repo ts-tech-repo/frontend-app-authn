@@ -154,7 +154,7 @@ const messages = defineMessages({
   },
   'registration.request.server.error': {
     id: 'registration.request.server.error',
-    defaultMessage: 'An error has occurred. Try refreshing the page, or check your internet connection.',
+    defaultMessage: 'An error has occurred. Try refreshing the page, or check your internet connection. 2',
     description: 'Error message for internal server error.',
   },
   'registration.rate.limit.error': {

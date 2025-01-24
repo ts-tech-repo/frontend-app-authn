@@ -75,7 +75,7 @@ const messages = defineMessages({
   },
   'internal.server.error': {
     id: 'internal.server.error',
-    defaultMessage: 'An error has occurred. Try refreshing the page, or check your internet connection.',
+    defaultMessage: 'An error has occurred. Try refreshing the page, or check your internet connection. 3',
     description: 'Error message that appears when server responds with 500 error code',
   },
   'rate.limit.error': {

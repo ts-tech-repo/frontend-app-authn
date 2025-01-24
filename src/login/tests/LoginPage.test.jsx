@@ -394,7 +394,7 @@ describe('LoginPage', () => {
   // ******** test alert messages ********
 
   it('should match login error message', () => {
-    const errorMessage = 'An error has occurred. Try refreshing the page, or check your internet connection.';
+    const errorMessage = 'An error has occurred. Try refreshing the page, or check your internet connection 1.';
     store = mockStore({
       ...initialState,
       login: {

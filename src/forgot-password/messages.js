@@ -115,13 +115,13 @@ const messages = defineMessages({
   },
   'token.validation.internal.sever.error': {
     id: 'token.validation.internal.sever.error',
-    defaultMessage: 'An error has occurred. Try refreshing the page, or check your internet connection.',
+    defaultMessage: 'An error has occurred. Try refreshing the page, or check your internet connection.5',
     description: 'Error message that appears when server responds with 500 error code',
   },
   // Error messages
   'internal.server.error': {
     id: 'internal.server.error',
-    defaultMessage: 'An error has occurred. Try refreshing the page, or check your internet connection.',
+    defaultMessage: 'An error has occurred. Try refreshing the page, or check your internet connection.6',
     description: 'Error message that appears when server responds with 500 error code',
   },
 });
