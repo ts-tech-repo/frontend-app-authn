@@ -121,7 +121,7 @@ const messages = defineMessages({
   // Error messages
   'internal.server.error': {
     id: 'internal.server.error',
-    defaultMessage: 'An error has occurred. Try refreshing the page, or check your internet connection.',
+    defaultMessage: 'Your account has been deactivate. Please contact your support for more information.',
     description: 'Error message that appears when server responds with 500 error code',
   },
 });
