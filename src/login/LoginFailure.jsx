@@ -59,9 +59,7 @@ const LoginFailureMessage = (props) => {
         <p>
           <FormattedMessage
             id="login.inactive.user.error"
-            defaultMessage="In order to sign in, you need to activate your account.{lineBreak}
-            {lineBreak}We just sent an activation link to {email}. If you do not receive an email,
-            check your spam folders or {supportLink}."
+            defaultMessage="Your account has been deactivated. Please contact your support for more information."
             values={{
               lineBreak: <br />,
               email: <strong className="data-hj-suppress">{props.loginError.email}</strong>,
