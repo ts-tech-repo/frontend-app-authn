@@ -124,7 +124,7 @@ const messages = defineMessages({
   // Error messages
   'internal.server.error': {
     id: 'internal.server.error',
-    defaultMessage: inactive_msg,
+    defaultMessage: {inactive_msg},
     description: 'Error message that appears when server responds with 500 error code',
   },
 });
