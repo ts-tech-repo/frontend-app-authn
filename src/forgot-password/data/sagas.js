@@ -7,7 +7,6 @@ import {
   forgotPasswordBegin,
   forgotPasswordForbidden,
   forgotPasswordServerError,
-  forgotPasswordInactiveError,
   forgotPasswordSuccess,
 } from './actions';
 import { forgotPassword } from './service';
@@ -24,10 +23,6 @@ export function* handleForgotPassword(action) {
     if (e.response && e.response.status === 403) {
       yield put(forgotPasswordForbidden());
       logInfo(e);
-    } else if (e.response && e.response.status === 402){
-      yield put(forgotPasswordInactiveError());
-      logError(e);
-      console.log("i am here");
     } else {
       yield put(forgotPasswordServerError());
       logError(e);

@@ -46,7 +46,11 @@ const ForgotPasswordAlert = (props) => {
      break;
     case INTERNAL_SERVER_ERROR:
       const inactive_msg = getConfig().INACTIVE_USER_MESSAGE;
-      message = <div dangerouslySetInnerHTML={{ __html: inactive_msg }} />;
+      message = inactive_msg ? (
+        <div dangerouslySetInnerHTML={{ __html: inactive_msg }} />
+      ) : (
+        formatMessage(messages['internal.server.error.message'])
+      );
       break;
     case FORBIDDEN_STATE:
       heading = formatMessage(messages['forgot.password.error.message.title']);
