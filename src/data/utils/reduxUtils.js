@@ -25,6 +25,7 @@ export default class AsyncActionType {
   }
   
   get INACTIVE() {
+    console.log(`${this.topic}__${this.name}__INACTIVE`);
     return `${this.topic}__${this.name}__INACTIVE`;
   }
 
