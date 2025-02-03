@@ -248,8 +248,8 @@ class LoginPage extends React.Component {
             currentProvider={thirdPartyAuthContext.currentProvider}
             platformName={thirdPartyAuthContext.platformName}
           />
-          {this.props.loginError ? <LoginFailureMessage loginError={this.props.loginError} /> : 'one'}
-          {thirdPartyAuthContext.errorMessage ? <LoginFailureMessage loginError={tpaAuthenticationError} /> : 'two'}
+          {this.props.loginError ? <LoginFailureMessage loginError={this.props.loginError} /> : null}
+          {thirdPartyAuthContext.errorMessage ? <LoginFailureMessage loginError={tpaAuthenticationError} /> : null}
           {submitState === DEFAULT_STATE && this.state.isSubmitted ? windowScrollTo({ left: 0, top: 0, behavior: 'smooth' }) : null}
           {activationMsgType && <AccountActivationMessage messageType={activationMsgType} />}
           {this.props.resetPassword && !this.props.loginError ? <ResetPasswordSuccess /> : null}
