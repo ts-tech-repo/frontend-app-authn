@@ -26,6 +26,10 @@ export const forgotPasswordServerError = () => ({
   type: FORGOT_PASSWORD.FAILURE,
 });
 
+export const forgotPasswordInactiveError = () => ({
+  type: FORGOT_PASSWORD.INACTIVE,
+});
+
 export const setForgotPasswordFormData = (forgotPasswordFormData) => ({
   type: FORGOT_PASSWORD_PERSIST_FORM_DATA,
   payload: { forgotPasswordFormData },

@@ -23,6 +23,11 @@ export default class AsyncActionType {
   get FAILURE() {
     return `${this.topic}__${this.name}__FAILURE`;
   }
+  
+  get INACTIVE() {
+    console.log(`${this.topic}__${this.name}__INACTIVE`);
+    return `coming here`;
+  }
 
   get RESET() {
     return `${this.topic}__${this.name}__RESET`;
