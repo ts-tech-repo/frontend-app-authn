@@ -35,7 +35,7 @@ const LoginFailureMessage = (props) => {
       {formatMessage(messages['login.incorrect.credentials.error.reset.link.text'])}
     </Hyperlink>
   );
-
+  const inactive_msg = getConfig().INACTIVE_USER_MESSAGE;
   switch (errorCode) {
     case NON_COMPLIANT_PASSWORD_EXCEPTION: {
       errorList = (
@@ -57,9 +57,10 @@ const LoginFailureMessage = (props) => {
       );
       errorList = (
         <p>
+          {inactive_msg}
           <FormattedMessage
             id="login.inactive.user.error"
-            defaultMessage="Your account has been deactivated. Please contact your support for more information."
+            defaultMessage={inactive_msg}
             values={{
               lineBreak: <br />,
               email: <strong className="data-hj-suppress">{props.loginError.email}</strong>,
