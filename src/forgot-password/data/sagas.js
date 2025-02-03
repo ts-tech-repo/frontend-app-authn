@@ -23,6 +23,10 @@ export function* handleForgotPassword(action) {
     if (e.response && e.response.status === 403) {
       yield put(forgotPasswordForbidden());
       logInfo(e);
+    } else if (e.response && e.response.status === 402){
+      yield put(forgotPasswordServerError());
+      // logError(e);
+      console.log("i am here");
     } else {
       yield put(forgotPasswordServerError());
       logError(e);

@@ -18,6 +18,6 @@ export async function forgotPassword(email) {
     .catch((e) => {
       throw (e);
     });
-
+    console.log("data", data);
   return data;
 }
