@@ -47,7 +47,7 @@ const ForgotPasswordAlert = (props) => {
     case INTERNAL_SERVER_ERROR:
       const inactive_msg = getConfig().INACTIVE_USER_MESSAGE;
       message = inactive_msg ? (
-        <div dangerouslySetInnerHTML={{ __html: inactive_msg }} style={{color: "red"}} />
+        <div dangerouslySetInnerHTML={{ __html: inactive_msg }}/>
       ) : (
         formatMessage(messages['internal.server.error'])
       );

@@ -58,7 +58,7 @@ const LoginFailureMessage = (props) => {
       errorList = (
         <p>
           {inactive_msg ? (
-        <span dangerouslySetInnerHTML={{ __html: inactive_msg }} style={{color: "red"}}/>
+        <span dangerouslySetInnerHTML={{ __html: inactive_msg }}/>
         ) : (
           <FormattedMessage
             id="login.inactive.user.error"
