@@ -49,31 +49,27 @@ const LoginFailureMessage = (props) => {
     case FORBIDDEN_REQUEST:
       errorList = <p>{formatMessage(messages['login.rate.limit.reached.message'])}</p>;
       break;
-    case INACTIVE_USER: {
-      const supportLink = (
-        <a href={context.supportLink}>
-          {formatMessage(messages['contact.support.link'], { platformName: context.platformName })}
-        </a>
-      );
-      errorList = (
-        <p>
-          {inactive_msg ? (
-        <span dangerouslySetInnerHTML={{ __html: inactive_msg }} />
-        ) : (
-          <FormattedMessage
-            id="login.inactive.user.error"
-            defaultMessage="Your account has been deactivated. Please contact your support for more information."
-            values={{
-              lineBreak: <br />,
-              email: <strong className="data-hj-suppress">{props.loginError.email}</strong>,
-              supportLink,
-            }}
-          />
-    )}
-        </p>
-      );
-      break;
-    }
+      case INACTIVE_USER: {
+        const supportLink = (
+          <a href={context.supportLink}>
+            {formatMessage(messages['contact.support.link'], { platformName: context.platformName })}
+          </a>
+        );
+        errorList = (
+          <p>
+            <FormattedMessage
+              id="login.inactive.user.error"
+              defaultMessage="Your account has been deactivated. Please contact your support for more information."
+              values={{
+                lineBreak: <br />,
+                email: <strong className="data-hj-suppress">{props.loginError.email}</strong>,
+                supportLink,
+              }}
+            />
+          </p>
+        );
+        break;
+      }
     case ALLOWED_DOMAIN_LOGIN_ERROR: {
       const url = `${getConfig().LMS_BASE_URL}/dashboard/?tpa_hint=${context.tpaHint}`;
       const tpaLink = (
