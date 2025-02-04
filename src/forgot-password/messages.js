@@ -127,7 +127,7 @@ const messages = defineMessages({
   },
   'inactive.user.error': {
     id: 'inactive.user.error',
-    defaultMessage: getConfig()?.INACTIVE_USER_MESSAGE,
+    defaultMessage: getConfig().INACTIVE_USER_MESSAGE,
     description: 'Error message that appears when server responds with 500 error code',
   },
 });
