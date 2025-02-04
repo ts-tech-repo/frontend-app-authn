@@ -1,5 +1,4 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-import { getConfig } from '@edx/frontend-platform';
 
 const messages = defineMessages({
   'forgot.password.page.title': {
@@ -123,11 +122,6 @@ const messages = defineMessages({
   'internal.server.error': {
     id: 'internal.server.error',
     defaultMessage: 'Your account has been deactivated. Please contact your support for more information.',
-    description: 'Error message that appears when server responds with 500 error code',
-  },
-  'inactive.user.error': {
-    id: 'inactive.user.error',
-    defaultMessage: getConfig().INACTIVE_USER_MESSAGE,
     description: 'Error message that appears when server responds with 500 error code',
   },
 });
